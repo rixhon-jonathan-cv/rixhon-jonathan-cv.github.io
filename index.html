@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Rixhon Jonathan">
-    <meta name="description" content="Jonathan Rixhon est un étudiant en en web design et multimédia. Ce site répertorie un tas de choses sur lui, notamment des qualités et des compétences. ">
-    <meta name="keywords" content="Web, webdesign, frontend, backend, jonathan, rixhon, belgium, javascript, html, css, php, CV, curriculum vitae, qualités, formation ">
+    <meta charset="UTF-8" />
+    <meta name="author" content="Rixhon Jonathan" />
+    <meta
+      name="description"
+      content="Jonathan Rixhon est un étudiant en en web design et multimédia. Ce site répertorie un tas de choses sur lui, notamment des qualités et des compétences. "
+    />
+    <meta
+      name="keywords"
+      content="Web, webdesign, frontend, backend, jonathan, rixhon, belgium, javascript, html, css, php, CV, curriculum vitae, qualités, formation "
+    />
     <title>Jonathan Rixhon</title>
-    <link rel="stylesheet" href="./">
-
+    <link rel="stylesheet" href="./" />
   </head>
 
-  <body itemscope itemtype="https://schema.org/WebPage">
-    <header>
+  <body itemscope itemtype="https://schema.org/Person">
+    <header itemscope itemtype="https://schema.org/WebPage">
       <h1>
         Site du curriculum vitae de
         <span itemProp="author" itemscope itemtype="https://schema.org/Person">
@@ -484,7 +489,7 @@
         >
       </div>
     </header>
-    <main itemscope itemtype="https://schema.org/Person">
+    <main>
       <nav>
         <h2>Fil d’ariane</h2>
         <ol>
@@ -496,7 +501,10 @@
         </ol>
       </nav>
       <section>
-        <p itemprop="jobTitle">Développeur <span  itemprop="knowsAbout">frontend</span> et <span itemprop="knowsAbout">backend</span></p>
+        <p itemprop="jobTitle">
+          Développeur <span itemprop="knowsAbout">frontend</span> et
+          <span itemprop="knowsAbout">backend</span>
+        </p>
         <h2>
           <span>Jonathan</span>
           <span>Rixhon</span>
@@ -800,7 +808,7 @@
               <!-- structure ok ? ou bien une dl avec dt et dd ? -->
               <dl>
                 <dt>Secondaire</dt>
-                <dd >
+                <dd>
                   Saint Raphaël Remouchamp Technique de transition en
                   informatique.
                 </dd>
@@ -823,8 +831,8 @@
               <dl>
                 <dt itemprop="knowsAbout">Suite Adobe</dt>
                 <dd>
-                  Maîtrise moyenne sur <i>Illustrator</i>, <i>Photoshop</i>, <i>InDesign</i>,
-                  <i>AdobeXD</i>, <i>Premiere Pro</i>.
+                  Maîtrise moyenne sur <i>Illustrator</i>, <i>Photoshop</i>,
+                  <i>InDesign</i>, <i>AdobeXD</i>, <i>Premiere Pro</i>.
                 </dd>
                 <dt itemprop="knowsAbout"><i>Github</i></dt>
                 <dd>Utilisation régulière</dd>
@@ -896,29 +904,27 @@
           <input type="submit" value="S’inscrire" />
         </fieldset>
       </form>
-      <nav>
+      <section>
         <!-- rappel des lien en dessous ? -->
-        <h3>Navigation footer</h3>
-        <ul>
-          <li>
-            <h4>Service après vente</h4>
-            <ul>
-              <li><a href="#">Curriculum vitae</a></li>
-              <li><a href="#">Manuel</a></li>
-              <li><a href="#">Garantie</a></li>
-            </ul>
-          </li>
-          <li>
-            <h4>Sites</h4>
-            <ul>
-              <li>
-                <a href="#"><abbr title="Curriculum Vitae">CV</abbr></a>
-              </li>
-              <li><a href="#">Portfolio</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+        <h3>Me contacter</h3>
+        <address >
+          <dl>
+            <dt>Adresse mail</dt>
+            <dd>
+              <a href="mailto:jonathan.rixhon@hotmail.com"
+                >jonathan.rixhon@hotmail.com</a
+              >
+            </dd>
+            <dt>Numéro de téléphone</dt>
+            <dd><a href="tel:+3247418409" itemprop="telephone">+32 4 74 18 41 09</a></dd>
+            <dt>Adresse</dt>
+            <dd itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+              <span itemprop="streetAddress">Rue du chaffour, n°20</span> <span itemprop="postalCode" >4920</span>
+              <span itemprop="addressRegion">Harzé</span> <span itemprop="addressCountry">Belgique</span>
+            </dd>
+          </dl>
+        </address>
+      </section>
       <p lang="en">
         <img
           src="./img/drapeau.png"
